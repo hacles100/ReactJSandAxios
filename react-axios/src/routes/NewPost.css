@@ -1,0 +1,24 @@
+.new-post h2{
+
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.container .form-control {
+
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.form-control input, textarea {
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+
+

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from 'axios';
+// import axios from 'axios';
+import blogFecth from "../axios/config";
 import { Link } from "react-router-dom";
 import './Home.css'
 
@@ -14,7 +15,7 @@ const Home = () => {
        
         try {
             
-            const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+            const response = await blogFecth.get("/posts")
             
             const data = response.data
             console.log(data)
